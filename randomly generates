@@ -1,0 +1,22 @@
+import turtle 
+import random
+mylist1=[100,110,140,145,125,135,115,150,121,131,141,151,]
+mylist=[90,180,270,45,54,60,30,89,150,289,260,300,169,69,20,70,75,65,15,299,295,278,134,140]
+me=turtle.Turtle()
+me.speed(100)
+for i in range(30):
+    for i in range(40):
+        me.forward(100) 
+        me.left(170) #or 168.5
+    me.penup()
+    me.setheading(random.choice(mylist))
+    me.forward(random.choice(mylist1))
+    me.pendown()
+    for i in range(40):
+        me.forward(100) 
+        me.right(170) #or 168.5
+    me.penup()
+    me.setheading(random.choice(mylist))
+    me.forward(random.choice(mylist1))
+    me.pendown()
+turtle.done()
